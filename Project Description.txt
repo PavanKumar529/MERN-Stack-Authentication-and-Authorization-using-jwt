@@ -1,0 +1,1185 @@
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (authentication-and-authorization)
+version: (1.0.0)
+description: My MERN Authentication and Authorization Project
+entry point: (index.js)                                                                                                                                                                        
+test command:                                                                                                                                                                                  
+git repository:                                                                                                                                                                                
+keywords:                                                                                                                                                                                      
+author: Pavan Kumar Kuruva
+license: (ISC) MIT                                                                                                                                                                             
+About to write to C:\Users\Dell\Desktop\My Pojects\authentication and authorization\package.json:
+
+{
+  "name": "authentication-and-authorization",
+  "version": "1.0.0",
+  "description": "My MERN Authentication and Authorization Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavan Kumar Kuruva",
+  "license": "MIT"
+}
+
+
+Is this OK? (yes) y
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm i express mongoose cors bcrypt multer jsonwebtoken concurrently -D nodemon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Warning: PowerShell detected that you might be using a screen reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it, run 'Import-Module PSReadLine'.
+
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (authentication-and-authorization)
+version: (1.0.0)
+description: My MERN Authentication and Authorization Project
+entry point: (index.js)                                                                                                                                                                        
+test command:                                                                                                                                                                                  
+git repository:                                                                                                                                                                                
+keywords:                                                                                                                                                                                      
+author: Pavan Kumar Kuruva
+license: (ISC) MIT                                                                                                                                                                             
+About to write to C:\Users\Dell\Desktop\My Pojects\authentication and authorization\package.json:
+
+{
+  "name": "authentication-and-authorization",
+  "version": "1.0.0",
+  "description": "My MERN Authentication and Authorization Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  "license": "MIT"
+}
+
+
+Is this OK? (yes) y
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm i express mongoose cors bcrypt multer jsonwebtoken concurrently -D nodemon
+
+added 224 packages, and audited 225 packages in 1m
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm run dev
+
+> authentication-and-authorization@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+[1] 
+[1] > authentication-and-authorization@1.0.0 client
+[1] > npm start --prefix client
+[1]
+[0]
+[0] > authentication-and-authorization@1.0.0 server
+[0] > nodemon server
+[0]
+[0] [nodemon] 3.1.0
+[0] [nodemon] to restart at any time, enter `rs`
+[0] [nodemon] watching path(s): *.*
+[0] [nodemon] watching extensions: js,mjs,cjs,json
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[1] npm ERR! code ENOENT
+[1] npm ERR! syscall open
+[1] npm ERR! path C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client\package.json
+[1] npm ERR! errno -4058
+[1] npm ERR! enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client\package.json'        
+[1] npm ERR! enoent This is related to npm not being able to find a file.
+[1] npm ERR! enoent
+[1]
+[1] npm ERR! A complete log of this run can be found in: C:\Users\Dell\AppData\Local\npm-cache\_logs\2024-04-06T03_34_19_840Z-debug-0.log
+[1] npm run client exited with code 4294963238
+[0] ^C^CTerminate batch job (Y/N)? ^Cnpm run server exited with code 1
+Terminate batch job (Y/N)? 
+^C
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npx create-vite@latest
+√ Project name: ... client
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client...
+
+Done. Now run:
+
+  cd client
+  npm install
+  npm run dev
+
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> cd client
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client> npm install
+
+added 278 packages, and audited 279 packages in 36s
+
+103 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client> npm run dev
+
+> client@0.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.2.8  ready in 333 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+^C^CTerminate batch job (Y/N)? 
+^C
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client> 
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization\client> cd ..      
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm run dev
+
+> authentication-and-authorization@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+[0] 
+[0] > authentication-and-authorization@1.0.0 server
+[0] > nodemon server
+[0]
+[1]
+[1] > authentication-and-authorization@1.0.0 client
+[1] > npm start --prefix client
+[1]
+[0] [nodemon] 3.1.0
+[0] [nodemon] to restart at any time, enter `rs`
+[0] [nodemon] watching path(s): *.*
+[0] [nodemon] watching extensions: js,mjs,cjs,json
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[1] npm ERR! Missing script: "start"
+[1] npm ERR!
+[1] npm ERR! Did you mean one of these?
+[1] npm ERR!     npm star # Mark your favorite packages
+[1] npm ERR!     npm stars # View packages marked as favorites
+[1] npm ERR!
+[1] npm ERR! To see a list of scripts, run:
+[1] npm ERR!   npm run
+[1]
+[1] npm ERR! A complete log of this run can be found in: C:\Users\Dell\AppData\Local\npm-cache\_logs\2024-04-06T03_37_26_979Z-debug-0.log
+[1] npm run client exited with code 1
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] ^C^CTerminate batch job (Y/N)? npm run server exited with code 1
+Terminate batch job (Y/N)? 
+^C
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization>
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm run dev
+
+> authentication-and-authorization@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+[1] 
+[1] > authentication-and-authorization@1.0.0 client
+[1] > npm run dev --prefix client
+[1]
+[0]
+[0] > authentication-and-authorization@1.0.0 server
+[0] > nodemon server
+[0]
+[0] [nodemon] 3.1.0
+[0] [nodemon] to restart at any time, enter `rs`
+[0] [nodemon] watching path(s): *.*
+[0] [nodemon] watching extensions: js,mjs,cjs,json
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[1] 
+[1] > client@0.0.0 dev
+[1] > vite
+[1]
+[0] [nodemon] restarting due to changes...
+[1] Port 5173 is in use, trying another one...
+[1] 
+[1]   VITE v5.2.8  ready in 367 ms
+[1]
+[1]   ➜  Local:   http://localhost:5174/
+[1]   ➜  Network: use --host to expose
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+
+
+
+The above configurations are ok, Both server and client are running
+
+
+
+
+
+
+
+
+
+
+
+
+Now, Do the Project
+
+
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] GET /
+[0] GET /
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] Sat, 06 Apr 2024 09:45:27 GMT express deprecated res.send(status, body): Use res.status(status).send(body) instead at server.js:123:25
+[0] node:internal/errors:497
+[0]     ErrorCaptureStackTrace(err);
+[0]     ^
+[0]
+[0] RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Server Error
+[0]     at new NodeError (node:internal/errors:406:5)
+[0]     at ServerResponse.writeHead (node:_http_server:352:11)
+[0]     at ServerResponse._implicitHeader (node:_http_server:338:8)
+[0]     at write_ (node:_http_outgoing:919:9)
+[0]     at ServerResponse.end (node:_http_outgoing:1030:5)
+[0]     at ServerResponse.send (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\response.js:233:10)
+[0]     at ServerResponse.json (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\response.js:279:15)
+[0]     at ServerResponse.send (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\response.js:163:21)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:123:25
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5) {
+[0]   code: 'ERR_HTTP_INVALID_STATUS_CODE'
+[0] }
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:123
+[0]         res.status(500).send("Server Error" err)
+[0]                              ^^^^^^^^^^^^^^
+[0]
+[0] SyntaxError: missing ) after argument list
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114
+[0] app.get("/myprofile", middleware async(req,res)=> {
+[0]                       ^^^^^^^^^^
+[0]
+[0] SyntaxError: missing ) after argument list
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114
+[0] app.get("/myprofile", middleware, async(req,res)=> {
+[0]                       ^
+[0] ReferenceError: middleware is not defined
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114:23)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114
+[0] app.get("/myprofile", middleware, async(req,res)=> {
+[0]                       ^
+[0]
+[0] ReferenceError: middleware is not defined
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114:23)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114
+[0] app.get("/myprofile", middleware, async(req,res)=> {
+[0]                       ^
+[0]
+[0] ReferenceError: middleware is not defined
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114:23)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:7
+[0] c
+[0] ^
+[0]
+[0] ReferenceError: c is not defined
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:7:1)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114
+[0] app.get("/myprofile", middleware, async(req,res)=> {
+[0]                       ^
+[0]
+[0] ReferenceError: middleware is not defined
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:114:23)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:115
+[0] app.get("/myprofile", middleware, async(req,res)=> {
+[0]                       ^
+[0]
+[0] ReferenceError: middleware is not defined
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:115:23)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:7
+[0] const cors = require("cors")
+[0] ^^^^^
+[0]
+[0] SyntaxError: Unexpected token 'const'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6
+[0] const middleware = require(./)
+[0]                            ^
+[0]
+[0] SyntaxError: Unexpected token '.'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] (node:3328) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [Bus]. Use emitter.setMaxListeners() to increase limit
+[0] node:internal/validators:162
+[0]     throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
+[0]     ^
+[0]
+[0] TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received undefined
+[0]     at new NodeError (node:internal/errors:406:5)
+[0]     at validateString (node:internal/validators:162:11)
+[0]     at Module.require (node:internal/modules/cjs/loader:1108:3)    
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)  
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)      
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)      
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12) {
+[0]   code: 'ERR_INVALID_ARG_TYPE'
+[0] }
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] node:internal/modules/cjs/loader:423
+[0]       throw err;
+[0]       ^
+[0]
+[0] Error: Cannot find module 'C:\Users\Dell\Desktop\My Pojects\authentication and authorization\index.js'. Please verify that the package.json has a valid "main" entry
+[0]     at tryPackage (node:internal/modules/cjs/loader:415:19)        
+[0]     at Module._findPath (node:internal/modules/cjs/loader:665:18)  
+[0]     at Module._resolveFilename (node:internal/modules/cjs/loader:1034:27)
+[0]     at Module._load (node:internal/modules/cjs/loader:901:27)      
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)   
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32) {
+[0]   code: 'MODULE_NOT_FOUND',
+[0]   path: 'C:\\Users\\Dell\\Desktop\\My Pojects\\authentication and authorization\\package.json',
+[0]   requestPath: './'
+[0] }
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] JsonWebTokenError: invalid signature
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:171:19
+[0]     at getSecret (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:97:14)
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:101:10)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:10:25)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] JsonWebTokenError: invalid signature
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:171:19
+[0]     at getSecret (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:97:14)
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:101:10)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:10:25)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0] JsonWebTokenError: invalid signature
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:171:19
+[0]     at getSecret (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:97:14)
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:101:10)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:10:25)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)
+\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:10
+[0]        let token = req.header("x-token");
+[0]            ^
+[0]
+[0] SyntaxError: Identifier 'token' has already been declared
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:20
+[0]         let user = await userModel.findById(userId).select("-_id -password -confirmPassword -__v")
+[0]                    ^^^^^
+[0]
+[0] SyntaxError: await is only valid in async functions and the top level bodies of modules
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:32
+[0]     catch(err) {
+[0]     ^^^^^
+[0]
+[0] SyntaxError: Unexpected token 'catch'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:20
+[0]         let user = await userModel.findById(userId).select("-_id -password -confirmPassword -__v")
+[0]                    ^^^^^
+[0]
+[0] SyntaxError: await is only valid in async functions and the top level bodies of modules
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:32
+[0]     catch(err) {
+[0]     ^^^^^
+[0]
+[0] SyntaxError: Unexpected token 'catch'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:33
+[0]     catch(err) {
+[0]     ^^^^^
+[0]
+[0] SyntaxError: Unexpected token 'catch'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] undefined
+[0] undefined
+[0] JsonWebTokenError: jwt must be provided
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:60:17)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:15:25)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:280:10)
+[0]     at cors (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\cors\lib\index.js:188:7)
+[0] undefined
+[0] undefined
+[0] JsonWebTokenError: jwt must be provided
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:60:17)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:15:25)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:280:10)
+[0]     at cors (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\cors\lib\index.js:188:7)
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:33
+[0]     catch(err) {
+[0]     ^^^^^
+[0]
+[0] SyntaxError: Unexpected token 'catch'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:3
+[0] module.exports = async function(req, res, next()) {
+[0]                                               ^
+[0]
+[0] SyntaxError: Unexpected token '('
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Module.require (node:internal/modules/cjs/loader:1115:19)
+[0]     at require (node:internal/modules/helpers:130:18)
+[0]     at Object.<anonymous> (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:6:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1241:14)
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] undefined
+[0] JsonWebTokenError: jwt must be provided
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:60:17)[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:16:30)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:280:10)
+[0]     at cors (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\cors\lib\index.js:188:7)
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] undefined
+[0] JsonWebTokenError: jwt must be provided
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:60:17)
+
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:16:30)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)       
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:280:10)
+[0]     at cors (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\cors\lib\index.js:188:7)
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:119
+[0]         let existingUser = await userModel.findById(userId)
+[0]         ^^^
+[0]
+[0] SyntaxError: let is disallowed as a lexically bound name
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] C:\Users\Dell\Desktop\My Pojects\authentication and authorization\server.js:119
+[0]         let existingUser = await userModel.findById(userId)
+[0]             ^^^^^^^^^^^^
+[0]
+[0] SyntaxError: Unexpected identifier 'existingUser'
+[0]     at internalCompileFunction (node:internal/vm:73:18)
+[0]     at wrapSafe (node:internal/modules/cjs/loader:1153:20)
+[0]     at Module._compile (node:internal/modules/cjs/loader:1205:27)
+[0]     at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+[0]     at Module.load (node:internal/modules/cjs/loader:1091:32)
+[0]     at Module._load (node:internal/modules/cjs/loader:938:12)
+[0]     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+[0]     at node:internal/main/run_main_module:23:47
+[0]
+[0] Node.js v20.9.0
+[0] [nodemon] app crashed - waiting for file changes before starting...
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] undefined
+[0] undefined
+[0] JsonWebTokenError: jwt must be provided
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:60:17)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:16:30)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)       
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:280:10)
+[0]     at cors (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\cors\lib\index.js:188:7)
+[0] undefined
+[0] undefined
+[0] JsonWebTokenError: jwt must be provided
+[0]     at module.exports [as verify] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\jsonwebtoken\verify.js:60:17)
+[0]     at module.exports (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\middleware.js:16:30)
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:149:13)
+[0]     at Route.dispatch (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\route.js:119:3)       
+[0]     at Layer.handle [as handle_request] (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\layer.js:95:5)
+[0]     at C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:284:15
+[0]     at Function.process_params (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:346:12)
+[0]     at next (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\express\lib\router\index.js:280:10)
+[0]     at cors (C:\Users\Dell\Desktop\My Pojects\authentication and authorization\node_modules\cors\lib\index.js:188:7)
+[0] Bearer eyJhbGciOiJIUzI1NiJ9.NjYxMGViNTkxN2VmNDI4YmIyYWRhNWRh.GQojD42t9cLjThpxIpJi5rKEK_BBk6chFKyVHaaekQs
+[0] eyJhbGciOiJIUzI1NiJ9.NjYxMGViNTkxN2VmNDI4YmIyYWRhNWRh.GQojD42t9cLjThpxIpJi5rKEK_BBk6chFKyVHaaekQs
+[0] ^C^C^C^CTerminate batch job (Y/N)? Terminate batch job (Y/N)? npm run server exited with code 1
+[1] npm run client exited with code 1
+Terminate batch job (Y/N)? 
+^C
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> 
+PS C:\Users\Dell\Desktop\My Pojects\authentication and authorization> npm run dev
+
+> authentication-and-authorization@1.0.0 dev
+> concurrently "npm run server" "npm run client"
+
+[1] 
+[1] > authentication-and-authorization@1.0.0 client
+[1] > npm run dev --prefix client
+[1]
+[0]
+[0] > authentication-and-authorization@1.0.0 server
+[0] > nodemon server
+[0]
+[0] [nodemon] 3.1.0
+[0] [nodemon] to restart at any time, enter `rs`
+[0] [nodemon] watching path(s): *.*
+[0] [nodemon] watching extensions: js,mjs,cjs,json
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[1] 
+[1] > client@0.0.0 dev
+[1] > vite
+[1]
+[0] [nodemon] restarting due to changes...
+[1] Port 5173 is in use, trying another one...
+[1]
+[1]   VITE v5.2.8  ready in 503 ms
+[1]
+[1]   ➜  Local:   http://localhost:5174/
+[1]   ➜  Network: use --host to expose
+[0] [nodemon] restarting due to changes...
+[0] [nodemon] starting `node server.js`
+[0] server running at http://127.0.0.5:5000
+[0] Database is Connected
+[0] Bearer eyJhbGciOiJIUzI1NiJ9.NjYxMGViNTkxN2VmNDI4YmIyYWRhNWRh.GQojD42t9cLjThpxIpJi5rKEK_BBk6chFKyVHaaekQs
+[0] eyJhbGciOiJIUzI1NiJ9.NjYxMGViNTkxN2VmNDI4YmIyYWRhNWRh.GQojD42t9cLjThpxIpJi5rKEK_BBk6chFKyVHaaekQs    
+[0] Bearer eyJhbGciOiJIUzI1NiJ9.NjYxMGViNTkxN2VmNDI4YmIyYWRhNWRh.GQojD42t9cLjThpxIpJi5rKEK_BBk6chFKyVHaaekQs
+[0] eyJhbGciOiJIUzI1NiJ9.NjYxMGViNTkxN2VmNDI4YmIyYWRhNWRh.GQojD42t9cLjThpxIpJi5rKEK_BBk6chFKyVHaaekQs    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
