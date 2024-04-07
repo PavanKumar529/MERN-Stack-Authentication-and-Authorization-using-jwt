@@ -9,18 +9,50 @@ function Register() {
     surName: '',
     email: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
+    photo: null // Add a state for storing the file
   });
 
   const changeHandler = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+// If the input is a file, update the photo state
+    if(e.target.name === "photo") {
+      const file = e.target.files[0]
+      setFormData({ 
+        ...formData,
+        photo: file,
+        fileType: file.type // Add the file type to the state
+      });
+    }
+    else {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
   };
+
+
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    axios.post("http://127.0.0.5:5000/register", formData)
+  // // Create FormData object
+  //     const formDataToSubmit = new FormData();
+  //     formDataToSubmit.append("firstName", formData.firstName);
+  //     formDataToSubmit.append("lastName", formData.lastName);
+  //     formDataToSubmit.append("surName", formData.surName);
+  //     formDataToSubmit.append("email", formData.email);
+  //     formDataToSubmit.append("password", formData.password);
+  //     formDataToSubmit.append("confirmPassword", formData.confirmPassword);
+  //     formDataToSubmit.append("photo", formData.photo); // Append the file
+  //     formDataToSubmit.append("fileType", formData.fileType); // Append the file type
+    
+    
+  // Send POST request
+    axios.post("http://127.0.0.5:5000/register", formData, {   
+      headers: {
+        "Content-Type": "multipart/form-data", // Set content type to multipart/form-data
+    },
+  })
       // .then(res => alert(res.formData) )
-      .then(res => alert("Data Stored in Database") )
+      .then(res => alert("Data Stored in Database"))
+      .catch(err => console.log("error:", err))
   };
 
   return (
@@ -75,6 +107,17 @@ function Register() {
           placeholder="Confirm Password"
           className="w-full mb-4 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
         />
+
+
+        <input
+          type="file"
+          name="photo"
+          value={formData.file}
+          onChange={changeHandler }
+          className="w-full mb-4 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+        />
+
+       
         <button
           type="submit"
           className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"

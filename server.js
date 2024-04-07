@@ -4,19 +4,47 @@ const { userModel } = require("./model/userModel")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const authMiddleware = require("./middleware")
-const cors = require("cors")
 
+const multer = require("multer")
+const path = require("path")
 
 const app = express()
+
+app.use(express.json())
+
+// Import cors package
+const cors = require("cors");
+
+// Configure CORS middleware
+app.use(cors({
+    origin: 'http://localhost:5174', // Allow requests from this origin
+    credentials: true // Allow sending cookies from client to server
+}));
+
+// app.use(cors())
+// app.use(cors({origin:"*"}))
+// app.use(cors({
+//     origin: 'http://localhost:5174'
+// }));
+
+
 const PORT = 5000
 const hostName = "127.0.0.5"
 
-app.use(express.json())
-// app.use(cors())
-// app.use(cors({origin:"*"}))
-app.use(cors({
-    origin: 'http://localhost:5174'
-}));
+
+
+// multer config
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './uploads')
+    },
+    filename: function (req, file, cb) {
+      cb(null, file.originalname)
+    }
+  })  
+  const upload = multer({ storage: storage }) 
+
+
 
 
 app.get("/", (req, res) => {
@@ -24,36 +52,41 @@ app.get("/", (req, res) => {
     res.send("<h1>Hello, I am Server</h1>")
 })
 
-app.post("/register", async(req, res) => {
-    // console.log(req.method, req.url)
-    const user = req.body 
-    // console.log(user)
-    const { email, password, confirmPassword } = user
-    if(email) {
-        const existingUser = await userModel.findOne({ email })
-        if(existingUser) {
-            return res.status(400).send("User Already Exist, Please Login") 
-         }
-    }
-    if(password !== confirmPassword) {
-        return res.status(400).send("Passwords are not matching")
-    }
-    const hashedPassword = await bcrypt.hash(password, 10)
-    const hashedConfirmPassword = await bcrypt.hash(confirmPassword, 10)
-
-
-    let newUserData = new userModel({
-        ...user,
-        password: hashedPassword,
-        confirmPassword: hashedConfirmPassword,
-    })
-
+app.post("/register",upload.single("photo"), async(req, res) => {
     try {
+        // console.log(req.method, req.url)
+        const user = req.body 
+        // console.log(user)
+        const { email, password, confirmPassword } = user
+        if(email) {
+            const existingUser = await userModel.findOne({ email })
+            if(existingUser) {
+                return res.status(400).send("User Already Exist, Please Login") 
+             }
+        }
+        if(password !== confirmPassword) {
+            return res.status(400).send("Passwords are not matching")
+        }
+        const hashedPassword = await bcrypt.hash(password, 10)
+        const hashedConfirmPassword = await bcrypt.hash(confirmPassword, 10)
+        
+    // Check if file was uploaded
+        if (!req.file) {
+            return res.status(400).send("No file uploaded");
+        }
+
+        let newUserData = new userModel({
+            ...user,
+            password: hashedPassword,
+            confirmPassword: hashedConfirmPassword,
+            photo: req.file.path // Assuming multer saves file path to req.file.path
+
+        })
         await newUserData.save()
         res.status(201).send("Registered Successfully Completed, Data stored in db")
-
     }
     catch(err) {
+        console.error("Error while storing data in DB:", err);
         res.status(500).send("Error while Storing data in DB");
     }
 
@@ -132,6 +165,31 @@ app.get("/myprofile", authMiddleware, async(req,res)=> {
         res.status(500).send("Invalid Token" + err)
     }
 })
+
+
+
+
+// // multer config
+// const storage = multer.diskStorage({
+//     destination: function (req, file, cb) {
+//       cb(null, './uploads')
+//     },
+//     filename: function (req, file, cb) {
+//       cb(null, file.originalname)
+//     }
+//   })  
+//   const upload = multer({ storage: storage }) 
+
+//   app.post('/json', (req,res) => {
+//     console.log(req.body);
+//     res.status(200).send({message: "Data Received" })
+// })
+
+app.post('/form', upload.single("photo"), (req,res) => {
+    console.log(req.body);
+    res.send("Data Received using multer in form data")
+})
+
 
 
 
