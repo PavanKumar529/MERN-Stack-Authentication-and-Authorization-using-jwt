@@ -14,7 +14,8 @@ const authMiddleware = async (req, res, next) => {
 
         req.user = userId; // Set the user ID in the request object
         next(); // Call next middleware
-    } catch (err) {
+    } 
+    catch (err) {
         console.error(err);
         res.status(500).send("Server Error");
     }

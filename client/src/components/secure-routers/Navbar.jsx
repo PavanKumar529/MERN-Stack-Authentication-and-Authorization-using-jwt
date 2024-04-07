@@ -7,6 +7,8 @@ import axios from 'axios';
 
 import { store } from '../../App';
 
+
+
 function Navbar() {
   const [token, setToken] = useContext(store);
   const [formData, setFormData] = useState(null);
@@ -102,16 +104,16 @@ function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             {/* Your company logo */}
             <div className="flex flex-shrink-0 items-center">
-              <Link to ='/' >
+              <Link to ='/myprofile' >
                 <img className="h-8 w-auto" src={EcommLogo} alt="Company-logo" />
               </Link>
             </div>
             {/* Desktop navigation links */}
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <Link to='/' className="text-white hover:bg-gray-600 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</Link>
+                <Link to='/myprofile' className="text-white hover:bg-gray-600 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</Link>
                 <Link to='/about' className="text-white hover:bg-gray-600 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</Link>
-                <Link to='/product' className="text-white hover:bg-gray-600 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Product</Link>
+                <Link to='/products' className="text-white hover:bg-gray-600 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Product</Link>
                 <Link to='/contact' className="text-white hover:bg-gray-600 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</Link>
               </div>
             </div>
@@ -191,8 +193,8 @@ function Navbar() {
           {/* Notification button and profile dropdown */}
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {/* Notification button */}
-            <button
-              type="button"
+            <Link to="/notification"
+              // type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
               <span className="absolute -inset-1.5"></span>
@@ -206,7 +208,7 @@ function Navbar() {
               >
                 <path d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
               </svg>
-            </button>
+            </Link>
             {/* Profile dropdown */}
             <div className="relative ml-3">
               <button
@@ -241,9 +243,9 @@ function Navbar() {
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
             {/* Mobile menu links */}
-            <Link to='/' className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</Link>
+            <Link to='/myprofile' className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</Link>
             <Link to='/about' className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</Link>
-            <Link to='/product' className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Product</Link>
+            <Link to='/products' className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Product</Link>
             <Link to='/contact' className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</Link>
           </div>
         </div>

@@ -1,3 +1,42 @@
+Project Title: MERN Authentication and Authorization
+
+Project Description:
+
+The MERN Authentication System project aims to provide users with a secure authentication mechanism using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This project allows users to register, login, and view their profile securely. It includes both frontend and backend components for a seamless user experience.
+
+Frontend:
+
+The frontend of the project is developed using React.js, a popular JavaScript library for building user interfaces. It consists of several components:
+
+App.jsx: This component serves as the entry point of the application. It sets up routing using React Router and provides context for managing user authentication tokens.
+
+Navbar.jsx: The navigation bar component displays links for registration and login when the user is not authenticated.
+
+Register.jsx: This component allows users to register by providing their personal information such as first name, last name, email, and password. It communicates with the backend to store user data securely.
+
+Login.jsx: Users can log in using their email and password. This component sends login credentials to the backend for authentication and receives a JSON Web Token (JWT) upon successful login.
+
+MyProfile.jsx: After successful authentication, users can view their profile information. This component fetches user data from the backend using the JWT for authorization.
+
+Backend:
+
+The backend of the project is developed using Node.js and Express.js, providing RESTful APIs for user authentication and profile management. It includes the following components:
+
+userModel.js: Defines the MongoDB schema for user data, including fields such as first name, last name, email, password, etc. It ensures data integrity and validation before storing it in the database.
+
+dbConnect.js: Handles the connection to the MongoDB database using Mongoose. It establishes a connection with the database upon server initialization.
+
+server.js: This file contains the main server logic. It sets up Express.js routes for user registration, login, and profile retrieval. It utilizes bcrypt for password hashing and JWT for token-based authentication.
+
+middleware.js: Defines middleware functions for JWT authentication. It verifies the JWT token sent in the request headers and extracts the user ID for further authorization.
+
+Overall, the MERN Authentication System project demonstrates the implementation of a secure authentication flow using modern web technologies, ensuring user data privacy and integrity.
+
+
+
+
+
+
 .......................................................................................Frontend...........................................................................................
 
 ...................................App.jsx..................................
@@ -86,7 +125,9 @@ function Register() {
   const submitHandler = async (e) => {
     e.preventDefault();
     axios.post("http://127.0.0.5:5000/register", formData)
-      .then(res => alert(res.formData) )
+    // .then(res => alert(res.formData) )
+      .then(res => alert("Data Stored in database) )
+
   };
 
   return (
@@ -445,7 +486,7 @@ app.post("/login", async(req,res) => {
     try {
         let existingUser = await userModel.findOne({ email })
         if(!existingUser) {
-            return res.status(404).send("User Not Found")
+            return res.status(404).send("User Not Found, Please Register")
         }
         else{
             let isMatched = await bcrypt.compare(password,existingUser.password)

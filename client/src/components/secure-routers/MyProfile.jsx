@@ -27,7 +27,7 @@ const MyProfile = () => {
       <Navbar />
       {
         formData &&
-        <center className='text-4xl py-80'>
+        <center className='text-4xl py-40'>
           <h1>This is My Profile</h1>
           <h1>Welcome to {formData.firstName} {formData.lastName} {formData.surName}</h1>
           <button className='bg-blue-700 text-2xl text-white rounded-md px-2 py-1' onClick={() => setToken(null)}>Logout</button>

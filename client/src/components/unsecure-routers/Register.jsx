@@ -19,7 +19,8 @@ function Register() {
   const submitHandler = async (e) => {
     e.preventDefault();
     axios.post("http://127.0.0.5:5000/register", formData)
-      .then(res => alert(res.formData) )
+      // .then(res => alert(res.formData) )
+      .then(res => alert("Data Stored in Database") )
   };
 
   return (

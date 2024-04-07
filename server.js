@@ -3,7 +3,7 @@ const { dbConnect } = require("./db/dbConnect")
 const { userModel } = require("./model/userModel")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
-const middleware = require("./middleware")
+const authMiddleware = require("./middleware")
 const cors = require("cors")
 
 
@@ -68,7 +68,7 @@ app.post("/login", async(req,res) => {
     try {
         let existingUser = await userModel.findOne({ email })
         if(!existingUser) {
-            return res.status(404).send("User Not Found")
+            return res.status(404).send("User Not Found, Please Register")
         }
         else{
             let isMatched = await bcrypt.compare(password,existingUser.password)
@@ -115,7 +115,9 @@ app.get("/getuser", async(req,res) => {
     }
 })
 
-app.get("/myprofile", middleware, async(req,res)=> {
+
+
+app.get("/myprofile", authMiddleware, async(req,res)=> {
     try{
         // let userId = jwt.verify(token, "Pranavi")
         let userId = req.user
