@@ -7,6 +7,7 @@ function Register() {
     firstName: '',
     lastName: '',
     surName: '',
+    gender: '', // Change gender to an empty string initially
     email: '',
     password: '',
     confirmPassword: '',
@@ -32,28 +33,30 @@ function Register() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-  // // Create FormData object
-  //     const formDataToSubmit = new FormData();
-  //     formDataToSubmit.append("firstName", formData.firstName);
-  //     formDataToSubmit.append("lastName", formData.lastName);
-  //     formDataToSubmit.append("surName", formData.surName);
-  //     formDataToSubmit.append("email", formData.email);
-  //     formDataToSubmit.append("password", formData.password);
-  //     formDataToSubmit.append("confirmPassword", formData.confirmPassword);
-  //     formDataToSubmit.append("photo", formData.photo); // Append the file
-  //     formDataToSubmit.append("fileType", formData.fileType); // Append the file type
-    
-    
-  // Send POST request
-    axios.post("http://127.0.0.5:5000/register", formData, {   
-      headers: {
-        "Content-Type": "multipart/form-data", // Set content type to multipart/form-data
-    },
-  })
-      // .then(res => alert(res.formData) )
-      .then(res => alert("Data Stored in Database"))
-      .catch(err => console.log("error:", err))
+    console.log("Form Data", formData);
+    try {
+      const response = await axios.post("http://127.0.0.5:5000/register", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data"
+        }
+      });
+      console.log(response.data); // Log response from the server
+      alert("Data Stored in Database");
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
+    
+  // // Send POST request
+  //   axios.post("http://127.0.0.5:5000/register", formData, {   
+  //     headers: {
+  //       "Content-Type": "multipart/form-data", // Set content type to multipart/form-data
+  //   },
+  // })
+  //     // .then(res => alert(res.formData) )
+  //     .then(res => alert("Data Stored in Database"))
+  //     .catch(err => console.log("error:", err))
+  // };
 
   return (
     <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
@@ -83,13 +86,61 @@ function Register() {
           placeholder="Surname"
           className="w-full mb-4 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
         />
+
+
+        <label className='mr-4'>Gender: </label>
+        <input
+          type="radio"
+          name="gender"
+          id='male'
+          value="male"
+          checked={formData.gender === "male"}
+          onChange={changeHandler}
+          className='mr-2'
+        />
+        <label htmlFor="male" className="mr-4">Male</label> {/* Add margin-right utility class for spacing */}
+
+
+        <input
+          type="radio"
+          name="gender"
+          id='female'
+          value="female"
+          checked={formData.gender === "female"}
+          onChange={changeHandler}
+          className='mr-2'
+        />
+        <label htmlFor="female" className='mr-4'>Female</label>
+
+        
+        <input
+          type="radio"
+          name="gender"
+          id='others'
+          value="others"
+          checked={formData.gender === "others"}
+          onChange={changeHandler}
+          className='mr-2'
+        />
+        <label htmlFor="others">Others</label>
+
+
+        {/* <input
+          type="dropdown"
+          name="surName"
+          value={formData.surName}
+          onChange={changeHandler}
+          placeholder="Surname"
+          className="w-full mb-4 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+        /> */}
+
         <input
           type="email"
           name="email"
           value={formData.email}
           onChange={changeHandler}
           placeholder="Email"
-          className="w-full mb-4 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+          className="w-full mt-4 mb-4 p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
         />
         <input
           type="password"

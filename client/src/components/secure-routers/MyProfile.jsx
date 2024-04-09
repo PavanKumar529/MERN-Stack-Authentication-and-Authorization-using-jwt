@@ -3,7 +3,7 @@ import { store } from '../../App';
 import { Navigate } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../secure-routers/Navbar';
-
+ 
 const MyProfile = () => {
   const [token, setToken] = useContext(store);
   const [formData, setFormData] = useState(null);
@@ -16,7 +16,7 @@ const MyProfile = () => {
     })
     .then(res => setFormData(res.data))
     .catch(err => console.log(err));
-  }, [token]);
+  }, []);
   
   if (!token) {
     return <Navigate to="/login" />;

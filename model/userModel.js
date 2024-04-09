@@ -14,10 +14,6 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    image: {
-        type: String // Assuming this is a URL or path to the user's profile picture
-        // required: true
-    },
     dateOfBirth: {
         type: Date,
         // required: true
@@ -62,8 +58,7 @@ const userSchema = mongoose.Schema({
         required: true
     },
     photo: {
-// Assuming you're storing the path or URL to the uploaded photo
-        type: String,
+        type: String,  // Assuming you're storing the path or URL to the uploaded photo
         required: true
     },
     description: {

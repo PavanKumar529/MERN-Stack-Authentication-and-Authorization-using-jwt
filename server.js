@@ -16,12 +16,12 @@ app.use(express.json())
 const cors = require("cors");
 
 // Configure CORS middleware
-app.use(cors({
-    origin: 'http://localhost:5174', // Allow requests from this origin
-    credentials: true // Allow sending cookies from client to server
-}));
+// app.use(cors({
+//     origin: 'http://localhost:5174', // Allow requests from this origin
+//     credentials: true // Allow sending cookies from client to server
+// }));
 
-// app.use(cors())
+app.use(cors())
 // app.use(cors({origin:"*"}))
 // app.use(cors({
 //     origin: 'http://localhost:5174'
@@ -56,25 +56,27 @@ app.post("/register",upload.single("photo"), async(req, res) => {
     try {
         // console.log(req.method, req.url)
         const user = req.body 
-        // console.log(user)
+        console.log(user)
         const { email, password, confirmPassword } = user
-        if(email) {
-            const existingUser = await userModel.findOne({ email })
-            if(existingUser) {
-                return res.status(400).send("User Already Exist, Please Login") 
-             }
+
+// Check if the email already exists in the database
+        const existingUser = await userModel.findOne({ email })
+        if(existingUser) {
+            return res.status(400).send("User Already Exist, Please Login")         
         }
+// Check if passwords match
         if(password !== confirmPassword) {
             return res.status(400).send("Passwords are not matching")
         }
+// Hash passwords
         const hashedPassword = await bcrypt.hash(password, 10)
         const hashedConfirmPassword = await bcrypt.hash(confirmPassword, 10)
         
-    // Check if file was uploaded
+// Check if file was uploaded
         if (!req.file) {
             return res.status(400).send("No file uploaded");
-        }
-
+        }        
+// Create new user object
         let newUserData = new userModel({
             ...user,
             password: hashedPassword,
@@ -82,11 +84,20 @@ app.post("/register",upload.single("photo"), async(req, res) => {
             photo: req.file.path // Assuming multer saves file path to req.file.path
 
         })
+// Save user to the database
         await newUserData.save()
         res.status(201).send("Registered Successfully Completed, Data stored in db")
     }
     catch(err) {
         console.error("Error while storing data in DB:", err);
+// // Delete uploaded file if registration fails
+        // if (req.file) {
+        //     fs.unlink(req.file.path, (err) => {
+        //         if (err) {
+        //             console.error("Error deleting file:", err);
+        //         }
+        //     });
+        // }
         res.status(500).send("Error while Storing data in DB");
     }
 
